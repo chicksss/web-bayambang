@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BUSINESS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav id="navbar" class="z-20 fixed px-24 w-full py-6 text-white bg-transparent transition-all duration-300">
+        <ul class="flex justify-center items-center gap-14 ">
+            <li>
+                <p class="text-lg">Home</p>
+            </li>
+            <li>
+                <p class="text-lg">About Bayambang</p>
+            </li>
+            <li>
+                <p class="text-lg">Officials</p>
+            </li>
+            <li>
+                <p class="text-lg">Issuances</p>
+            </li>
+            <li>
+                <p class="text-lg">News and Articles</p>
+            </li>
+            <li>
+                <p class="text-lg">Citizen Character</p>
+            </li>
+        </ul>
+    </nav>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-[#003566]');
+            } else {
+                navbar.classList.remove('bg-[#003566]');
+            }
+        });
+    </script>
+
+
+    <section class="relative h-screen overflow-hidden">
+        <!-- Background Video -->
+        <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover">
+            <source src="byb.mp4" type="video/mp4">
+
+        </video>
+
+        <!-- Content Overlay -->
+        <div class="relative z-10 flex items-center justify-start px-36 ga-10 h-full">
+            <div>
+                <img src="logo.png" class="h-44" alt="">
+            </div>
+            <div>
+                <h1 class="md:text-yellow-500 text-4xl md:text-5xl font-light font-['Quattrocento']">Municipality of
+                    Bayambang</h1>
+
+                <p class="text-white font-bold font-['Quicksand'] text-2xl">ROXAS ST., BRGY. ZONE II, BAYAMBANG,
+                    PANGASINAN, PHILIPPINES 2423</p>
+            </div>
+
+
+        </div>
+
+        <!-- Optional Overlay -->
+        <div class="absolute top-0 left-0 w-full h-full bg-teal-800 opacity-50 z-0"></div>
+    </section>
+
+    <section class="h-full">
+        <div class="flex justify-evenly text-center text-yellow-500 py-5">
+            <div>
+                <b class="text-7xl">77</b>
+                <p class="text-3xl">Barangays</p>
+            </div>
+            <div>
+                <b class="text-7xl">123,091
+                </b>
+                <p class="text-3xl">Population</p>
+            </div>
+            <div>
+                <b class="text-7xl"> 1,581</b>
+                <p class="text-3xl">Businesses Registered</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="h-full bg-[url('p1.jpg')] bg-cover relative h-screen overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-teal-800 opacity-50 z-0"></div>
+        <div class="flex justify-between">
+            <div>
+
+                <div id="controls-carousel" class="relative w-full" data-carousel="static">
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                        <!-- Item 1 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <div class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                                <b>Mission</b>
+                                <p>To maintain a peaceful and orderly town with modern
+                                    technology and infrastructure development; To promote and preserve its rich
+                                    historical and cultural heritage; To institute transparency, accountability and
+                                    integrity in governance; To empower its citizens in the
+                                    areas of health, education, economics, tourism, environmental protection and
+                                    disaster response.</p>
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                            <img src="/docs/images/carousel/carousel-2.svg"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="...">
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="/docs/images/carousel/carousel-3.svg"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="...">
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="/docs/images/carousel/carousel-4.svg"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="...">
+                        </div>
+                        <!-- Item 5 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="/docs/images/carousel/carousel-5.svg"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="...">
+                        </div>
+                    </div>
+                    <!-- Slider controls -->
+                    <button type="button"
+                        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                        data-carousel-prev>
+                        <span
+                            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 1 1 5l4 4" />
+                            </svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button"
+                        class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                        data-carousel-next>
+                        <span
+                            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 9 4-4-4-4" />
+                            </svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div>
+                    
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
